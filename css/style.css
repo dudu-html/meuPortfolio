@@ -239,6 +239,7 @@ input#menu:checked ~ .label1{
     /* height: 100vh; */
     /* background-color: red; */
     padding: 0px;
+    height: 1000vh;
 }
 
 .projetos > .container {
@@ -358,6 +359,7 @@ footer {
     }
 
     .menu-links {
+        /* display: none; */
         flex-direction: row;
 
         right: 24px;
@@ -372,7 +374,25 @@ footer {
         flex-direction: row;
     }
     
-    
+    .projeto {
+        /* background-color: red; */
+        flex-direction: column;
+        height: auto;
+    }
+
+    .projeto > .left, .right {
+        width: auto;
+    }
+
+    .projeto > .ilustrate {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* Para os projetos que estão ao contrário */
+    .notesprojeto {
+        flex-direction: column-reverse;
+    }
 
 }
 
