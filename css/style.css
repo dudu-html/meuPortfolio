@@ -64,6 +64,7 @@ section.landing {
 .name-profile > span { 
     font-size: 16px;
     color: #fff;
+    font-weight: 500;
 }
 
 .landing > .heading {
@@ -92,49 +93,47 @@ section.landing {
     line-height: normal;
 }
 
+
+
 .email-button {
-    /* background-color: red; */
-    width: fit-content;
-    /* padding: 16px; */
+    border: 2px solid #E13B76;
     display: flex;
-    gap: 16px;
-    border: 2px solid var(--primary);
+    width: fit-content;
+    color: #FFF;
+    /* padding: 16px; */
+    /* gap: 8px; */
     border-radius: 8px;
 }
 
 .email-button > .ilustration {
+    /* background-color: green; */
+    padding: 16px;
     display: flex;
     align-items: center;
     gap: 16px;
-    padding: 16px 0 16px 16px;
+    border: none;
 }
-
-.email-button > .ilustration > ion-icon {
-    color: #fff;
+.email-button > .ilustration>ion-icon {
     font-size: 24px;
 }
-.email-button > .ilustration > span {
+.email-button > #copy-button {
+    background-color: #E13B76;
     color: #fff;
-    font-size: 16px;
-}
-
-.email-button > button {
-    /* background-color: forestgreen; */
     padding: 16px;
     border: none;
-    background-color: var(--primary);
-    color: #fff;
-    border-radius: 0 8px 8px 0;
+    border: none;
+}
+.email-button > #copy-button>ion-icon {
     font-size: 24px;
 }
-
-.email-button > button:hover {
+.email-button > #copy-button:hover {
     opacity: 80%;
 }
-
-.email-button > button:active {
-    opacity: 60%;
+.email-button > #copy-button:active {
+    opacity: 40%;
 }
+
+
 
 .FAB-icons {
     margin: 0 auto;
@@ -239,7 +238,7 @@ input#menu:checked ~ .label1{
     /* height: 100vh; */
     /* background-color: red; */
     padding: 0px;
-    height: 1000vh;
+    height: auto;
 }
 
 .projetos > .container {
@@ -349,9 +348,11 @@ footer {
         padding: 24px;
     }
 
+    #landing {
+        gap: 64px;
+    }
     .landing > .heading {
        width: 100%;
-       /* align-items: center; */
     }
 
     .landing > .heading > h1 {
@@ -363,7 +364,7 @@ footer {
         flex-direction: row;
 
         right: 24px;
-        top: 480px
+        top: 520px
     }
 
     .menu-links > .social {
@@ -390,8 +391,12 @@ footer {
     }
 
     /* Para os projetos que estão ao contrário */
-    .notesprojeto {
+    .projetoreverso {
         flex-direction: column-reverse;
+    }
+
+    ion-icon {
+        width: 24px;
     }
 
 }
