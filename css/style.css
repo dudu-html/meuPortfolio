@@ -13,7 +13,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 64px;
+    scroll-padding-top: 134px;
 }
 
 body {
@@ -468,6 +468,23 @@ footer {
         width: 24px;
     }
 
+    .contato {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    section.contato > .left {
+        width: 100%;
+    }
+    
+    section.contato > .left > h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+    section.contato > form {
+        width: 100%;
+    }
+
 }
 
 
@@ -523,4 +540,79 @@ h3.subtitulo2 > .tag {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.contato {
+    /* background-color: red; */
+    display: flex;
+}
+
+.contato > .left {
+    width: 50%;
+    /* background-color: blue; */
+}
+.contato > .left > h2 {
+    color: #fff;
+    font-size: 56px;
+    line-height: 1.3;
+}
+.contato > .left > h2 > span {
+    color: #E13B76;
+}
+.contato > form {
+    width: 50%;
+    /* background-color: green; */
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.contato > form > div {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contato > form > div > label {
+    /* background-color: pink; */
+    padding-left: 16px;
+    border-left: 4px solid #E13B76;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contato > form > div > label > span {
+    color: #E13B76;
+}
+
+.contato > form > div > input, textarea {
+    padding: 16px;
+    background-color: #3a3a3a;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    color: #ffff;
+    resize: vertical;
+}
+
+.contato > form > button {
+    color: #FFF;
+    background-color: #E13B76;
+    border: none;
+    display: flex;
+    gap: 16px;
+    font-weight: 600;
+    padding: 8px 32px;
+    align-items: center;
+    font-size: 16px;
+    width: fit-content;
+    border-radius: 32px;
+    margin-left: auto;
+}
+
+.contato > form > button:hover {
+    opacity: 60%;
+    cursor: pointer;
 }

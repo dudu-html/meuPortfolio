@@ -18,7 +18,7 @@
             <li> <a href="#">Behance</a> / </li>
             <li> <a href="#">Github</a> / </li>
             <li> <a href="#">Instagram</a> / </li>
-            <li> <a href="#">Contato</a></li>
+            <li> <a href="#contato">Contato</a></li>
 
         </ul>
 
@@ -33,7 +33,7 @@
 
                     <img src="./img/avatar.jpg" alt="Foto de perfil">
 
-                    <span>Eduardo M. Lauermann</span>
+                    <span>Eduardo M. Lauermann | 🇧🇷</span>
 
                 </div>
                 <h1>UX & UI Designer</h1>
@@ -167,21 +167,39 @@
 
         </section>
 
-        <!-- <section class="contato">
+        <section class="contato" id="contato">
 
-            <div class="container">
+            <div class="left">
 
-                <div class="right">
-
-                    <h2>Vamos nos conectar de verdade.</h2>
-
-                </div>
-
-                <form action=""></form>
+                <h2>Vamos nos <span>conectar</span> de verdade.</h2>
 
             </div>
 
-        </section> -->
+            <form action="" autocomplete="on">
+
+                <div>
+                    <label for="Nome">Nome <span>*</span></label>
+                    <input type="text" name="Nome" placeholder="Como você prefere que te chame?" required autocomplete="name">
+                </div>
+
+                
+                <div>
+                    <label for="Email">E-mail <span>*</span></label>
+                    <input type="email" name="Email" id="email" placeholder="Use seu e-mail profissional." required autocomplete="email">
+                </div>
+                
+                <div>
+                    <label for="Mensagem">Mensagem</label>
+                    <textarea name="Mensagem" id="msg" cols="15" rows="5" placeholder="Qual o motivo do seu contato?"></textarea>
+                </div>
+
+                
+
+                <button type="submit">Enviar <ion-icon name="send"></ion-icon> </button>
+
+            </form>
+
+        </section>
 
     </main>
 
