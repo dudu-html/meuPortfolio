@@ -57,6 +57,10 @@ header > ul > li > a {
     padding-bottom: 2px;
 }
 
+header > ul > li > a > ion-icon {
+    display: none;
+}
+
 header > ul > li > a:hover {
     border-bottom: 2px solid #E13B76;
 }
@@ -379,9 +383,115 @@ footer {
     border-top: 1px solid #3a3a3a;
 }
 
+:root {
+    --alturaheadermobile: 90px;
+}
+
+#burger {
+    display: none;
+}
+
+.label-burger {
+    display: none;
+}
+
+.label-burger {
+    /* background-color: palegreen; */
+    width: 36px;
+    height: 26px;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.lineburger {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-left: auto;
+    transition: .2s;
+}
+
+input:checked ~ label > .lineburger {
+    background-color: red;
+}
+
+input:checked ~ label > .lineburger2 {
+    width: 75%;
+}
+input:checked ~ label > .lineburger3 {
+    width: 50%;
+}
+
 @media (max-width: 768px) {
+
+    
     header {
+        /* display: none; */
+        height: var(--alturaheadermobile);
+    
+    }
+
+    .label-burger {
+        display: flex;
+    }
+
+    header > ul {
+        /* display: none; */
+        left: 100%;
+    }
+
+    input:checked ~ ul {
+        display: flex;
+        left: 20%;
+        right: 0;
+    }
+
+    header > ul {
+        transition: 300ms ease;
+        position: absolute;
+        flex-direction: column;
+        background-color: #232323;
+        /* box-shadow: -32px 0 32px 0 #000000; */
+
+
+        top: var(--alturaheadermobile);
+        /* right: 0px; */
+        gap: 32px 0;
+        padding: 24px 0;
+        width: 80%;
+        height: 1000px;
+        
+    }
+
+    header > ul > li {
+        display: flex;
+        width: 100%;
+        /* background-color: rgb(84, 79, 19); */
+        padding: 0;
+    }
+    header > ul > li > b {
         display: none;
+    }
+
+    header > ul > li > a > ion-icon {
+        display: flex;
+    }
+    header > ul > li > a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 16px;
+        /* background-color: #000; */
+        gap: 8px;
+        border-left: 4px solid #E13B76;
+        margin-left: 0;
+    }
+
+    header > ul > li > a:hover {
+        border-bottom: none;
     }
 
     .email-button > .ilustration {
